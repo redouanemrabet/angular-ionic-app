@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true" >
+
+<div class="upper">
+  <div class="icon">
+    <ion-icon name="logo-angular"></ion-icon>
+  </div>
+  <p id="login">BGHIT FORMATION APP</p>
+
+  <ion-card  *ngFor="let f of format" class="ion-margin">
+    <ion-card-header>
+      <ion-card-subtitle [style.color]="f.Title === 'Angular' ? 'red' : (f.Title === 'React' ? '#194D33' : (f.Title === 'Php') ? '#8993be' :'#fb503b') ">
+        {{ f.Title }}
+      </ion-card-subtitle>
+      <ion-item>
+      <ion-icon *ngIf="f.prix === '1000 DH'" color="danger" size="small" name="ellipse"></ion-icon>
+      <ion-icon *ngIf="f.prix === '2000 DH'" color="success" size="small" name="ellipse"></ion-icon>
+      <ion-label>{{ f.prix }}</ion-label> 
+      </ion-item>
+    </ion-card-header>
+
+      <ion-card-content>
+        <ion-label>Duration of the course : {{ f.duree }}</ion-label>
+      </ion-card-content>
+      <ion-row>
+        <ion-item>
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <p routerLink="/details/{{f.id}}">More details</p>
+        </ion-item>
+      </ion-row>
+
+  </ion-card>
+
+  <ion-tab-bar slot="bottom" >
+    <ion-tab-button tab="home">
+      <ion-icon name="book-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+
+    <ion-tab-button routerLink="/affiche">
+      <ion-icon name="download-outline"></ion-icon>
+      <ion-label>Formations</ion-label>
+    </ion-tab-button>
+
+
+    <ion-tab-button routerLink="/profile">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+
+
+</div>
+
+</ion-content>

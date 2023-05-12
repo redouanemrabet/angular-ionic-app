@@ -1,0 +1,81 @@
+<ion-content [fullscreen]="true">
+<div class="upper">
+  <div class="icon">
+    <ion-icon name="logo-angular"></ion-icon>
+  </div>
+  <p id="login">BGHIT FORMATION APP</p>
+    <p style="font-size:16px;
+            line-height:22px;
+            font-weight:300;
+            margin:0;
+            text-align: center;">{{ today | date:'fullDate' }}</p>
+
+
+            <div style="display:flex;
+            justify-content: space-between;
+            border-radius : 5px;
+            box-shadow: 0px 3px 6px 	rgb(12, 36, 100);
+            margin-top : 20px;
+            padding: 15px;
+            ">
+
+            <ion-label style="color: black;">{{ userLogged }}</ion-label>
+            <ion-icon style="font: size 20px;" name="person-outline"></ion-icon>
+            </div>
+
+<div (click)="toFormation()" style="display:flex;
+            justify-content: space-between;
+            border-radius : 5px;
+            box-shadow: 0px 3px 6px 	rgb(12, 36, 100);
+            margin-top : 20px;
+            padding: 15px;
+            ">
+
+  <ion-label >My Formations</ion-label>
+    <ion-icon style="font: size 20px;" name="download-outline"></ion-icon>
+</div>
+
+<div  (click)="toOut()" style="display:flex;
+            justify-content: space-between;
+            border-radius : 5px;
+            box-shadow: 0px 3px 6px 	rgb(12, 36, 100);
+            margin-top : 20px;
+            padding: 15px;
+            ">
+
+  <ion-label>Sign Out</ion-label>
+    <ion-icon style="font: size 20px;" name="exit-outline"></ion-icon>
+</div>
+
+<ion-tab-bar slot="bottom" style="
+        position : absolute;
+        bottom: 0;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+        width : 100%;
+        margin : 0px;
+       
+        height :70px;
+">
+  <ion-tab-button style=" --background : transparent;" routerLink="/home">
+    <ion-icon name="book-outline"></ion-icon>
+    <ion-label>Home</ion-label>
+  </ion-tab-button>
+
+
+  <ion-tab-button routerLink="/affiche">
+    <ion-icon name="download-outline"></ion-icon>
+    <ion-label>Formations</ion-label>
+  </ion-tab-button>
+
+
+  <ion-tab-button tab="profile">
+    <ion-icon name="person-outline"></ion-icon>
+    <ion-label>Profile</ion-label>
+  </ion-tab-button>
+
+</ion-tab-bar>
+
+</div>
+ 
+</ion-content>

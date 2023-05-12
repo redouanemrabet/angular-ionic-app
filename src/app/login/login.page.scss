@@ -1,0 +1,130 @@
+ion-content{
+    --background : #00cccc;
+    min-height : 100%;
+
+    .upper{
+        width:100%;
+        height: 100%;
+        padding-top : 50px;
+
+        .icon{
+            display : flex;
+            justify-content : center;
+            align-items : center;
+
+             ion-icon{
+            font-size :100px;
+            color : #0c2464;
+          }
+        }
+
+        #login{
+            text-align : center;
+            color : #0c2464;
+            font-size : 28px;
+        }
+       
+    }
+
+    .middle{
+        padding : 20px;
+
+        .box{
+            border-radius : 10px;
+            height : auto;
+            background : #fff;
+            padding : 20px;
+        }
+
+        p{
+            color : gray;
+            text-align : center;
+        }
+
+        ion-item{
+            ion-icon{
+                color :  #aaadce;
+            }
+        }
+
+        #forgetPassword{
+            font-size : 14px;
+            color : #aaadce;
+            text-align : end;
+        }
+
+       
+       
+
+        .btn{
+            display: flex;
+            justify-content: center;
+           
+
+            ion-button{
+                --background : #6e5ead;
+            }
+        }
+
+        #media{
+            text-align: center;
+            color: black ;
+        }
+
+        .socizlMedia{
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            ion-icon{
+                padding-right: 15px;
+                font-size: 28px;
+            }
+             ion-icon:nth-child(1){
+                 color: #4267B2;
+             }
+
+              ion-icon:nth-child(2){
+                 color: #1DA1F2;
+             }
+
+              ion-icon:nth-child(3){
+                 color: #DB4437;
+             }
+        }
+
+        .touchLogin,.faceLogin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width : 100%;
+            color: #fff;
+            border-bottom: 1px solid #ccc;
+
+            ion-icon{
+                font: size 20px;
+                margin-right: 5px;
+                color: red;
+            }
+        }
+
+
+    }
+
+    .navigartion{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        p{
+           text-align: center;
+            color: black ;
+        }
+    }
+
+
+
+}
