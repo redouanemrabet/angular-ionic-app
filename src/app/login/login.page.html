@@ -2,32 +2,32 @@
 
 <div class="upper">
   <div class="icon">
-    <ion-icon name="logo-angular"></ion-icon>
+    <ion-icon name="logo-ionic"></ion-icon>
   </div>
-  <p id="login">BGHIT FORMATION APP</p>
+  <p id="login">LearnTech</p>
 
 
   <div class="middle">
   <div class="box">
 
-    
+
          <p>Please Login to your account</p>
          <ion-item>
           <ion-label position="floating">Email Address</ion-label>
           <ion-input [(ngModel)]="user.email"   type="email"  name="email" placeholder="Email" required email ></ion-input>
           <ion-icon class="ion-align-self-center" slot="end" name="mail"></ion-icon>
          </ion-item>
-        
+
         <ion-item>
           <ion-label position="floating">Password</ion-label>
           <ion-input [(ngModel)]="user.password" [type]="type ? 'password' : 'text'" name="email" placeholder="Password" required email></ion-input>
           <ion-icon class="ion-align-self-center" slot="end" name="eye-outline" (click)="changeType()"></ion-icon>
         </ion-item>
 
-        
-        <p id="forgetPassword" (click)="goToForget()" >Forget Password </p> 
-    
-      
+
+        <p id="forgetPassword" (click)="goToForget()" >Forget Password </p>
+
+
         <div class="btn">
            <ion-button (click) = "LogIn(user)">Login</ion-button>
 
@@ -40,9 +40,9 @@
             <ion-icon name="logo-twitter" (click)="twlogin()"></ion-icon>
             <ion-icon name="logo-google" (click)="glogin()"></ion-icon>
           </div>
-          
+
   </div>
-      
+
 
 </div>
 <div class="navigartion">

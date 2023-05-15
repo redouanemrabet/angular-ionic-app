@@ -1,18 +1,20 @@
 <ion-content [fullscreen]="true">
 <div class="upper">
   <div class="icon">
-    <ion-icon name="logo-angular"></ion-icon>
+    <ion-icon name="logo-ionic"></ion-icon>
   </div>
-  <p id="login">BGHIT FORMATION APP</p>
-    <p style="font-size:16px;
+  <p id="login">LearnTech</p>
+    <p style="font-size:18px;
             line-height:22px;
-            font-weight:300;
+            font-weight:500;
             margin:0;
+            color: crimson;
             text-align: center;">{{ today | date:'fullDate' }}</p>
 
 
             <div style="display:flex;
             justify-content: space-between;
+            background-color: white;
             border-radius : 5px;
             box-shadow: 0px 3px 6px 	rgb(12, 36, 100);
             margin-top : 20px;
@@ -26,18 +28,20 @@
 <div (click)="toFormation()" style="display:flex;
             justify-content: space-between;
             border-radius : 5px;
+            background-color: white;
             box-shadow: 0px 3px 6px 	rgb(12, 36, 100);
             margin-top : 20px;
             padding: 15px;
             ">
 
-  <ion-label >My Formations</ion-label>
+  <ion-label >My Courses</ion-label>
     <ion-icon style="font: size 20px;" name="download-outline"></ion-icon>
 </div>
 
 <div  (click)="toOut()" style="display:flex;
             justify-content: space-between;
             border-radius : 5px;
+            background-color: white;
             box-shadow: 0px 3px 6px 	rgb(12, 36, 100);
             margin-top : 20px;
             padding: 15px;
@@ -54,7 +58,7 @@
         margin-bottom: 0px !important;
         width : 100%;
         margin : 0px;
-       
+
         height :70px;
 ">
   <ion-tab-button style=" --background : transparent;" routerLink="/home">
@@ -65,7 +69,7 @@
 
   <ion-tab-button routerLink="/affiche">
     <ion-icon name="download-outline"></ion-icon>
-    <ion-label>Formations</ion-label>
+    <ion-label>My Courses</ion-label>
   </ion-tab-button>
 
 
@@ -77,5 +81,5 @@
 </ion-tab-bar>
 
 </div>
- 
+
 </ion-content>
